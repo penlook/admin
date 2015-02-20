@@ -1,10 +1,9 @@
-<html>
-	<body>
-		<ul>
-			<% @test.each do |test|%>
-			<li><%= test %></li>
-			<% end %>
-		</ul>
-	</body>
-	
-</html>
+<h1>Users</h1>
+<table>
+	<% @users.each do |user| %>
+	<tr>
+		<td><%= user.name %></td>
+		<td><%= user.alias %></td>
+	</tr>
+	<% end %>
+</table>
